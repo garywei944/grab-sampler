@@ -1,0 +1,12 @@
+{
+    "files.watcherExclude": {
+        "**/data/**": true,
+        "**/checkpoints/**": true,
+        "**/logs/**": true,
+        "**/wandb/**": true,
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "cSpell.userWords": [
+        "grabngo"
+    ]
+}

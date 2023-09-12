@@ -1,0 +1,46 @@
+# https://stackoverflow.com/a/67103294
+# https://ianhopkinson.org.uk/2022/02/understanding-setup-py-setup-cfg-and-pyproject-toml-in-python/
+
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+[build-system]
+requires = ["setuptools >= 62.6"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grab-sampler"
+description = "Optimal Permutation-based SGD Data Sampler for PyTorch"
+requires-python = ">=3.10"
+license = { text = "Apache Software License 2.0" }
+authors = [
+    { name = "garywei944", email = "garywei944@gmail.com" },
+]
+keywords = ["GraB", "data-permutation", "PyTorch", "dataloader", "sampler"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy",
+    "pandas",
+    "absl-py",
+    "overrides",
+    "tqdm",
+    "scikit-learn",
+    "torch-sparse",
+]
+dynamic = ["version", "readme"]
+
+[project.urls]
+Repository = "https://github.com/garywei944/grab-sampler"
+BugTracker = "https://github.com/garywei944/grab-sampler/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "grabsampler.__version__" }
+readme = { file = ["README.md"] }
