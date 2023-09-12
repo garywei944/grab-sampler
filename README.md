@@ -129,7 +129,7 @@ for epoch in range(...):
 * [Causal Language Modeling](https://github.com/GarlGuo/GraB-lib/blob/main/experiments/nlp/clm/main.py) (
   Wikitext-103, OpenWebText, etc)
 
-# How does `grabngo` work?
+# How does `grab-sampler` work?
 
 The reordering of data permutation happens at the beginning of each training
 epoch, whenever an iterator of the dataloader is created,
