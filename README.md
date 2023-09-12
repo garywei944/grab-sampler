@@ -124,9 +124,9 @@ for epoch in range(...):
 
 # Experiment Training Scripts
 
-* [Image Classification](https://github.com/GarlGuo/GraB-lib/blob/main/experiments/cv/main.py) (
+* [Image Classification](https://github.com/garywei944/grab_exp/blob/main/experiments/cv/cv.py) (
   CIFAR-10, MNIST, etc)
-* [Causal Language Modeling](https://github.com/GarlGuo/GraB-lib/blob/main/experiments/nlp/clm/main.py) (
+* [Causal Language Modeling](https://github.com/garywei944/grab_exp/blob/main/experiments/nlp/clm/clm.py) (
   Wikitext-103, OpenWebText, etc)
 
 # How does `grab-sampler` work?

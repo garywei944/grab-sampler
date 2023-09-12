@@ -12,9 +12,7 @@ name = "grab-sampler"
 description = "Optimal Permutation-based SGD Data Sampler for PyTorch"
 requires-python = ">=3.10"
 license = { text = "Apache Software License 2.0" }
-authors = [
-    { name = "garywei944", email = "garywei944@gmail.com" },
-]
+authors = [{ name = "garywei944", email = "garywei944@gmail.com" }]
 keywords = ["GraB", "data-permutation", "PyTorch", "dataloader", "sampler"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -42,5 +40,5 @@ Repository = "https://github.com/garywei944/grab-sampler"
 BugTracker = "https://github.com/garywei944/grab-sampler/issues"
 
 [tool.setuptools.dynamic]
-version = { attr = "grabsampler.__version__" }
-readme = { file = ["README.md"] }
+version = { attr = "__version__" }
+readme = { file = ["README.md"], content-type = "text/markdown" }
