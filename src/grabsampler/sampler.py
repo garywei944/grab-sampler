@@ -49,7 +49,7 @@ class GraBSampler(Sampler[list[int]]):
         *args,
         **kwargs,
     ):
-        super().__init__(data_source)
+        super().__init__()
 
         # Disable timer by default in production
         self.timer = timer or EventTimer(device=device, disable=True)
